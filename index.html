@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foxy Sweet Treats</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Foxy Sweet Treats</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#pricing">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#cart">Shopping Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h2>Welcome to Foxy Sweet Treats</h2>
+            <p>Delicious cupcakes, brownies, cookies, and muffins.</p>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p>Coming soon... Make sure to check back later for mouth-watering pictures of our treats!</p>
+    </section>
+
+    <section id="pricing">
+        <h2>Menu</h2>
+        <div class="menu">
+            <!-- Cookies -->
+            <div class="item">
+                <img src="images/chocolate_chip_cookie.jpg" alt="Chocolate Chip Cookie">
+                <h3>Chocolate Chip Cookie</h3>
+                <p>Single: $1.50<br>Half Dozen: $8.00<br>Dozen: $15.00</p>
+                <button onclick="addToCart('Chocolate Chip Cookie - Single', 1.50)">Add Single to Cart</button>
+                <button onclick="addToCart('Chocolate Chip Cookie - Half Dozen', 8.00)">Add Half Dozen to Cart</button>
+                <button onclick="addToCart('Chocolate Chip Cookie - Dozen', 15.00)">Add Dozen to Cart</button>
+            </div>
+            <div class="item">
+                <img src="images/sugar_cookie.jpg" alt="Sugar Cookie">
+                <h3>Sugar Cookie</h3>
+                <p>Single: $1.50<br>Half Dozen: $8.00<br>Dozen: $15.00</p>
+                <button onclick="addToCart('Sugar Cookie - Single', 1.50)">Add Single to Cart</button>
+                <button onclick="addToCart('Sugar Cookie - Half Dozen', 8.00)">Add Half Dozen to Cart</button>
+                <button onclick="addToCart('Sugar Cookie - Dozen', 15.00)">Add Dozen to Cart</button>
+            </div>
+            <div class="item">
+                <img src="images/peanut_butter_cookie.jpg" alt="Peanut Butter Cookie">
+                <h3>Peanut Butter Cookie</h3>
+                <p>Single: $1.50<br>Half Dozen: $8.00<br>Dozen: $15.00</p>
+                <button onclick="addToCart('Peanut Butter Cookie - Single', 1.50)">Add Single to Cart</button>
+                <button onclick="addToCart('Peanut Butter Cookie - Half Dozen', 8.00)">Add Half Dozen to Cart</button>
+                <button onclick="addToCart('Peanut Butter Cookie - Dozen', 15.00)">Add Dozen to Cart</button>
+            </div>
+            <div class="item">
+                <img src="images/white_chocolate_chip_macadamia_cookie.jpg" alt="White Chocolate Chip Macadamia Cookie">
+                <h3>White Chocolate Chip Macadamia Cookie</h3>
+                <p>Single: $1.50<br>Half Dozen: $8.00<br>Dozen: $15.00</p>
+                <button onclick="addToCart('White Chocolate Chip Macadamia Cookie - Single', 1.50)">Add Single to Cart</button>
+                <button onclick="addToCart('White Chocolate Chip Macadamia Cookie - Half Dozen', 8.00)">Add Half Dozen to Cart</button>
+                <button onclick="addToCart('White Chocolate Chip Macadamia Cookie - Dozen', 15.00)">Add Dozen to Cart</button>
+            </div>
+            <div class="item">
+                <img src="images/red_velvet_cookie.jpg" alt="Red Velvet Cookie">
+                <h3>Red Velvet Cookie</h3>
+                <p>Single: $1.50<br>Half Dozen: $8.00<br>Dozen: $15.00</p>
+                <button onclick="addToCart('Red Velvet Cookie - Single', 1.50)">Add Single to Cart</button>
+                <button onclick="addToCart('Red Velvet Cookie - Half Dozen', 8.00)">Add Half Dozen to Cart</button>
+                <button onclick="addToCart('Red Velvet Cookie - Dozen', 15.00)">Add Dozen to Cart</button>
+            </div>
+            
+            <!-- Muffins -->
+            <div class="item">
+                <img src="images/blueberry_muffin.jpg" alt="Blueberry Muffin">
+                <h3>Blueberry Muffin</h3>
+                <p>Single: $2.50<br>Half Dozen: $13.00<br>Dozen: $25.00</p>
+                <button onclick="addToCart('Blueberry Muffin - Single', 2.50)">Add Single to Cart</button>
+                <button onclick="addToCart('Blueberry Muffin - Half Dozen', 13.00)">Add Half Dozen to Cart</button>
+                <button onclick="addToCart('Blueberry Muffin - Dozen', 25.00)">Add Dozen to Cart</button>
+            </div>
+            <div class="item">
+                <img src="images/lemon_poppy_seed_muffin.jpg" alt="Lemon Poppy Seed Muffin">
+                <h3>Lemon Poppy Seed Muffin</h3>
+                <p>Single: $2.50<br>Half Dozen: $13.00<br>Dozen: $25.00</p>
+                <button onclick="addToCart('Lemon Poppy Seed Muffin - Single', 2.50)">Add Single to Cart</button>
+                <button onclick="addToCart('Lemon Poppy Seed Muffin - Half Dozen', 13.00)">Add Half Dozen to Cart</button>
+                <button onclick="addToCart('Lemon Poppy Seed Muffin - Dozen', 25.00)">Add Dozen to Cart</button>
+            </div>
+            <div class="item">
+                <img src="images/chocolate_chip_muffin.jpg" alt="Chocolate Chip Muffin">
+                <h3>Chocolate Chip Muffin</h3>
+                <p>Single: $2.50<br>Half Dozen: $13.00<br>Dozen: $25.00</p>
+                <button onclick="addToCart('Chocolate Chip Muffin - Single', 2.50)">Add Single to Cart</button>
+                <button onclick="addToCart('Chocolate Chip Muffin - Half Dozen', 13.00)">Add Half Dozen to Cart</button>
+                <button onclick="addToCart('Chocolate Chip Muffin - Dozen', 25.00)">Add Dozen to Cart</button>
+            </div>
+            <div class="item">
+                <img src="images/banana_nut_muffin.jpg" alt="Banana Nut Muffin">
+                <h3>Banana Nut Muffin</h3>
+                <p>Single: $2.50<br>Half Dozen: $13.00<br>Dozen: $25.00</p>
+                <button onclick="addToCart('Banana Nut Muffin - Single', 2.50)">Add Single to Cart</button>
+                <button onclick="addToCart('Banana Nut Muffin - Half Dozen', 13.00)">Add Half Dozen to Cart</button>
+                <button onclick="addToCart('Banana Nut Muffin - Dozen', 25.00)">Add Dozen to Cart</button>
+            </div>
+            <div class="item">
+                <img src="images/cinnamon_swirl_muffin.jpg" alt="Cinnamon Swirl Muffin">
+                <h3>Cinnamon Swirl Muffin</h3>
+                <p>Single: $2.50<br>Half Dozen: $13.00<br>Dozen: $25.00</p>
+                <button onclick="addToCart('Cinnamon Swirl Muffin - Single', 2.50)">Add Single to Cart</button>
+                <button onclick="addToCart('Cinnamon Swirl Muffin - Half Dozen', 13.00)">Add Half Dozen to Cart</button>
+                <button onclick="addToCart('Cinnamon Swirl Muffin - Dozen', 25.00)">Add Dozen to Cart</button>
+            </div>
+            <div class="item">
+                <img src="images/triple_chocolate_muffin.jpg" alt="Triple Chocolate Muffin">
+                <h3>Triple Chocolate Muffin</h3>
+                <p>Single: $2.50<br>Half Dozen: $13.00<br>Dozen: $25.00</p>
+                <button onclick="addToCart('Triple Chocolate Muffin - Single', 2.50)">Add Single to Cart</button>
+                <button onclick="addToCart('Triple Chocolate Muffin - Half Dozen', 13.00)">Add Half Dozen to Cart</button>
+                <button onclick="addToCart('Triple Chocolate Muffin - Dozen', 25.00)">Add Dozen to Cart</button>
+            </div>
+
+            <!-- Cupcakes -->
+            <div class="item">
+                <img src="images/vanilla_cupcake.jpg" alt="Vanilla Cupcake">
+                <h3>Vanilla Cupcake</h3>
+                <p>Single: $2.75<br>Half Dozen: $15.00<br>Dozen: $28.00</p>
+                <button onclick="addToCart('Vanilla Cupcake - Single', 2.75)">Add Single to Cart</button>
+                <button onclick="addToCart('Vanilla Cupcake - Half Dozen', 15.00)">Add Half Dozen to Cart</button>
+                <button onclick="addToCart('Vanilla Cupcake - Dozen', 28.00)">Add Dozen to Cart</button>
+            </div>
+            <div class="item">
+                <img src="images/chocolate_cupcake.jpg" alt="Chocolate Cupcake">
+                <h3>Chocolate Cupcake</h3>
+                <p>Single: $2.75<br>Half Dozen: $15.00<br>Dozen: $28.00</p>
+                <button onclick="addToCart('Chocolate Cupcake - Single', 2.75)">Add Single to Cart</button>
+                <button onclick="addToCart('Chocolate Cupcake - Half Dozen', 15.00)">Add Half Dozen to Cart</button>
+                <button onclick="addToCart('Chocolate Cupcake - Dozen', 28.00)">Add Dozen to Cart</button>
+            </div>
+            <div class="item">
+                <img src="images/strawberry_cupcake.jpg" alt="Strawberry Cupcake">
+                <h3>Strawberry Cupcake</h3>
+                <p>Single: $2.75<br>Half Dozen: $15.00<br>Dozen: $28.00</p>
+                <button onclick="addToCart('Strawberry Cupcake - Single', 2.75)">Add Single to Cart</button>
+                <button onclick="addToCart('Strawberry Cupcake - Half Dozen', 15.00)">Add Half Dozen to Cart</button>
+                <button onclick="addToCart('Strawberry Cupcake - Dozen', 28.00)">Add Dozen to Cart</button>
+            </div>
+            <div class="item">
+                <img src="images/red_velvet_cupcake.jpg" alt="Red Velvet Cupcake">
+                <h3>Red Velvet Cupcake</h3>
+                <p>Single: $2.75<br>Half Dozen: $15.00<br>Dozen: $28.00</p>
+                <button onclick="addToCart('Red Velvet Cupcake - Single', 2.75)">Add Single to Cart</button>
+                <button onclick="addToCart('Red Velvet Cupcake - Half Dozen', 15.00)">Add Half Dozen to Cart</button>
+                <button onclick="addToCart('Red Velvet Cupcake - Dozen', 28.00)">Add Dozen to Cart</button>
+            </div>
+            <div class="item">
+                <img src="images/orange_dreamsicle_cupcake.jpg" alt="Orange Dreamsicle Cupcake">
+                <h3>Orange Dreamsicle Cupcake</h3>
+                <p>Single: $2.75<br>Half Dozen: $15.00<br>Dozen: $28.00</p>
+                <button onclick="addToCart('Orange Dreamsicle Cupcake - Single', 2.75)">Add Single to Cart</button>
+                <button onclick="addToCart('Orange Dreamsicle Cupcake - Half Dozen', 15.00)">Add Half Dozen to Cart</button>
+                <button onclick="addToCart('Orange Dreamsicle Cupcake - Dozen', 28.00)">Add Dozen to Cart</button>
+            </div>
+            <div class="item">
+                <img src="images/cookies_n_cream_cupcake.jpg" alt="Cookies n Cream Cupcake">
+                <h3>Cookies n Cream Cupcake</h3>
+                <p>Single: $2.75<br>Half Dozen: $15.00<br>Dozen: $28.00</p>
+                <button onclick="addToCart('Cookies n Cream Cupcake - Single', 2.75)">Add Single to Cart</button>
+                <button onclick="addToCart('Cookies n Cream Cupcake - Half Dozen', 15.00)">Add Half Dozen to Cart</button>
+                <button onclick="addToCart('Cookies n Cream Cupcake - Dozen', 28.00)">Add Dozen to Cart</button>
+            </div>
+
+            <!-- Brownies -->
+            <div class="item">
+                <img src="images/classic_brownie.jpg" alt="Classic Brownie">
+                <h3>Classic Brownie</h3>
+                <p>Single: $3.00<br>Half Dozen: $16.00<br>Dozen: $30.00</p>
+                <button onclick="addToCart('Classic Brownie - Single', 3.00)">Add Single to Cart</button>
+                <button onclick="addToCart('Classic Brownie - Half Dozen', 16.00)">Add Half Dozen to Cart</button>
+                <button onclick="addToCart('Classic Brownie - Dozen', 30.00)">Add Dozen to Cart</button>
+            </div>
+            <div class="item">
+                <img src="images/fudge_brownie.jpg" alt="Fudge Brownie">
+                <h3>Fudge Brownie</h3>
+                <p>Single: $3.00<br>Half Dozen: $16.00<br>Dozen: $30.00</p>
+                <button onclick="addToCart('Fudge Brownie - Single', 3.00)">Add Single to Cart</button>
+                <button onclick="addToCart('Fudge Brownie - Half Dozen', 16.00)">Add Half Dozen to Cart</button>
+                <button onclick="addToCart('Fudge Brownie - Dozen', 30.00)">Add Dozen to Cart</button>
+            </div>
+            <div class="item">
+                <img src="images/peanut_butter_fudge_swirl_brownie.jpg" alt="Peanut Butter Fudge Swirl Brownie">
+                <h3>Peanut Butter Fudge Swirl Brownie</h3>
+                <p>Single: $3.00<br>Half Dozen: $16.00<br>Dozen: $30.00</p>
+                <button onclick="addToCart('Peanut Butter Fudge Swirl Brownie - Single', 3.00)">Add Single to Cart</button>
+                <button onclick="addToCart('Peanut Butter Fudge Swirl Brownie - Half Dozen', 16.00)">Add Half Dozen to Cart</button>
+                <button onclick="addToCart('Peanut Butter Fudge Swirl Brownie - Dozen', 30.00)">Add Dozen to Cart</button>
+            </div>
+            <div class="item">
+                <img src="images/red_velvet_cream_cheese_swirl_brownie.jpg" alt="Red Velvet/Cream Cheese Swirl Brownie">
+                <h3>Red Velvet/Cream Cheese Swirl Brownie</h3>
+                <p>Single: $3.00<br>Half Dozen: $16.00<br>Dozen: $30.00</p>
+                <button onclick="addToCart('Red Velvet/Cream Cheese Swirl Brownie - Single', 3.00)">Add Single to Cart</button>
+                <button onclick="addToCart('Red Velvet/Cream Cheese Swirl Brownie - Half Dozen', 16.00)">Add Half Dozen to Cart</button>
+                <button onclick="addToCart('Red Velvet/Cream Cheese Swirl Brownie - Dozen', 30.00)">Add Dozen to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Foxy Sweet Treats is dedicated to providing delicious baked goods to our community. We specialize in cupcakes, brownies, cookies, and muffins, all made with the finest ingredients. Follow us on Facebook for updates!</p>
+    </section>
+
+    <section id="cart">
+        <h2>Shopping Cart</h2>
+        <form id="order-form" action="https://formspree.io/f/xyzgegaj" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="address">Delivery Address</label>
+            <input type="text" id="address" name="address">
+
+            <label for="pickup">Pickup</label>
+            <input type="checkbox" id="pickup" name="pickup" value="yes" onchange="toggleAddressField()">
+            <p>If you choose pickup, the delivery address will be ignored.</p>
+
+            <div id="cart-items" class="cart-items"></div>
+
+            <label for="payment">Payment Method</label>
+            <select id="payment" name="payment" required>
+                <option value="cash">Cash</option>
+                <option value="cashapp">CashApp</option>
+                <option value="paypal">PayPal</option>
+                <option value="venmo">Venmo</option>
+            </select>
+
+            <button type="submit">Checkout</button>
+        </form>
+    </section>
+
+    <section id="calendar">
+        <h2>Event Calendar</h2>
+        <div id="calendar-container">
+            <!-- Event calendar will be implemented here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact us through email or on Facebook.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
